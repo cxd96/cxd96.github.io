@@ -4,29 +4,33 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<style type="text/css">
-	div{
-		height: 100px;
-		width: 100px;
-		background: red;
-		transition:2s all;
-	}
-
-
-		div:hover
-		{
-			width: 100px;
+		
+		.dv{
 			height: 100px;
+			width: 100px;
 			background: red;
-			transition:2s all;
-			position: absolute;;
-			left: 5%;
-
+			margin-left: 40px;
+			margin-top: 10px;
+			-moz-transition:2s all ease;
 
 		}
-	</style>
+		.dv:hover
+		{
+		width: 100px;
+		height: 100px;
+		background: red;
+		margin-top: 10px;
+		margin-left: 40px;
+		box-shadow: 1px -6px 5px 0px green,
+		2px 8px 5px 0px blue,
+		-13px 2px 5px 0px pink,
+		-moz-transition:2s all ease;
 
+		}
+
+	</style>
 </head>
 <body>
-	<div></div>
+	<div class="dv"></div>
 </body>
 </html>
