@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	.box1{
+		width: 100%;
+		height: 40px;
+		background: red;
+		transition:1s all;
+	}
+	.box2{
+		width: 100%;
+		height: 40px;
+		background: blue;
+		transition:1s all;
+
+
+	}
+	.box3{
+		width: 100%;
+		height: 40px;
+		background: yellow;
+		transition:1s all;
+
+
+	}
+	@media(min-width: 350px){
+		.clearfix{
+			content: "";
+			display: table;
+			clear: both;
+
+		}
+	
+	.box1{
+		width: 50%;
+		height: 40px;
+		background: red;
+		float: left;
+		transition:1s all;
+
+	}
+		.box2{
+		width: 50%;
+		height: 40px;
+		background: blue;
+		float: left;
+		transition:1s all;
+
+	}
+		.box3{
+		width: 50%;
+		height: 40px;
+		background: yellow;
+		float: left;
+		transition:1s all;
+
+	}
+	}
+	@media(min-width: 800px){
+	.clearfix{
+
+		clear: none;
+	}
+
+	.box1{
+		width: 33.33333%;
+		height: 40px;
+		background: red;
+		transition:1s all;
+		float: left;
+
+	}	
+	.box2{	
+		width: 33.33333%;
+		height: 40px;
+		background: blue;
+		transition:1s all;
+		float: left;
+}
+	.box3{
+
+		width: 33.33333%;
+		height: 40px;
+		background: yellow;
+		transition:1s all;
+		float: left;
+
+	}
+
+	}
+	</style>
+</head>
+<body>
+
+	<div class="box1"></div>
+	<div class="box2"></div>
+	<div class="box3 clearfix"></div>
+</body>
+</html>
