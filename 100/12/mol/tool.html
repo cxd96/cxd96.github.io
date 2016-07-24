@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title></title>
+    <Link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css">
+    <link href="bootstrap/css/www.css">
+    <script src="bootstrap/js/jquery-1.12.0.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <style>
+        img{
+            width: 57px;
+        }
+        a{
+            color: #000000;
+        }
+        p{
+            text-align: center;
+        }
+    </style>
+</head>
+<body bgcolor="#dcdcdc">
+<!--搜索-->
+<div class="well" style="background-color: #46b8da;height: auto;margin-top: -50px">
+    <div class="container">
+        <img src="images/000.png" style="width: 320px;" class="img-responsive">
+        <center>
+            <form onsubmit="return baiduWithHttps(this)" action="http://www.baidu.com/baidu" target="_blank" class="navbar-form" role="search" style="margin-top: -50px">
+                <input type="text" class="form-control" onfocus="checkHttps" name="word" style="width: 90%">
+                <input type="submit"value="百度搜索" class="btn btn-default" style="margin-top: 3px">
+                <br>
+            </form>
+        </center>
+        <script src="http://s1.bdstatic.com/r/www/cache/global/js/BaiduHttps_20150714_zhanzhang.js"></script>
+        <script>
+            function checkHttps () {
+                BaiduHttps.useHttps();
+            };
+            function baiduWithHttps (formname) {
+                var data = BaiduHttps.useHttps();
+                if (data.s === 0) {
+                    return true;
+                }
+                else {
+                    formname.action = 'https://www.baidu.com/baidu' + '?ssl_s=1&ssl_c' + data.ssl_code;
+                    return true;
+                }
+            };
+        </script>
+        <div class="row" style="height: 30px;margin-top: 5px">
+            <div class="col-xs-3"><center><a href="https://www.hao123.com/"><img src="images/www.png" style="width: 24px"><h5>网址</h5></a></center></div>
+            <div class="col-xs-3"><center><a href="https://www.taobao.com/"><img src="images/shop.png"style="width: 24px"><h5>购物</h5></a></center></div>
+            <div class="col-xs-3"><center><a href="#"><img src="images/tool.png"style="width: 24px"><h5>工具</h5></a></center></div>
+            <div class="col-xs-3"><center><a href="http://news.baidu.com/"><img src="images/newss.png"style="width: 24px"><h5>新闻</h5></a></center></div>
+        </div>
+    </div>
+</div>
+<div class="table-responsive" style="margin-top: -20px">
+    <table class="table table-bordered">
+        <tr class="info">
+            <td><a href="#">生活助手</a></td>
+            <td><a href="#">交通出行</a></td>
+            <td><a href="#">金融理财</a></td>
+            <td><a href="#">工具万能</a></td>
+        </tr>
+        <tr class="info">
+            <td><a href="#">星座算命</a></td>
+            <td><a href="#">娱乐购物</a></td>
+            <td><a href="#">教育亲子</a></td>
+            <td><a href="#">医疗健康</a></td>
+        </tr>
+    </table>
+    <div class="lifehelp" id="life">
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <tr>
+                    <td>生活助手</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><a href="http://m.46644.com/tianqi/"><img src="image/tianqi.png" class="img-responsive center-block"><p>天气</p></a></td>
+                    <td><a href="http://m.46644.com/aqi/"><img src="image/aqi.png"class="img-responsive center-block"><p>空气指数</p></a></td>
+                    <td><a href="http://m.46644.com/calendar/"><img src="image/calendar.png"class="img-responsive center-block"><p>万年历</p></a></td>
+                    <td><a href="http://m.46644.com/size/"><img src="image/size.png"class="img-responsive center-block"><p>衣服尺码</p></a></td>
+                </tr>
+                <tr>
+                    <td><a href="http://m.46644.com/caipiao/"><img src="image/caipiao.png"class="img-responsive center-block"><p>彩票开奖</p></a></td>
+                    <td><a href="http://m.46644.com/express/"><img src="image/express.png"class="img-responsive center-block"><p>快递查询</p></a></td>
+                    <td><a href="http://m.46644.com/tv/"><img src="image/tv.png"class="img-responsive center-block"><p>电视节目</p></a></td>
+                    <td><a href="http://m.fang.com/esf/hz/"><img src="image/sofu.jpg"class="img-responsive center-block"><p>搜房</p></a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="traffic" id="tra">
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <tr>
+                    <td>交通出行</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><a href="http://m.46644.com/train/"><img src="image/train.png"class="img-responsive center-block"><p>火车</p></a></td>
+                    <td><a href="http://m.46644.com/bus/"><img src="image/bus.png"class="img-responsive center-block"><p>长途汽车</p></a></td>
+                    <td><a href="http://m.zhuna.cn/?agent_id=2763582"><img src="image/hotel.jpg"class="img-responsive center-block"><p>酒店</p></a></td>
+                    <td><a href="http://wap.yikuaiqu.com/?s=46644"><img src="image/yikuai.jpg"class="img-responsive center-block"><p>景点门票</p></a></td>
+                </tr>
+                <tr>
+                    <td><a href="http://m.46644.com/transit/"><img src="image/transit.png"class="img-responsive center-block"><p>公交地铁</p></a></td>
+                    <td><a href="http://m.46644.com/flight/"><img src="image/flight.png"class="img-responsive center-block"><p>航班查询</p></a></td>
+                    <td><a href="http://m.46644.com/illegal/"><img src="image/illegal.png"class="img-responsive center-block"><p>违章查询</p></a></td>
+                    <td><a href="http://m.46644.com/traffic/"><img src="image/traffic.png"class="img-responsive center-block"><p>路况查询</p></a></td>
+                </tr>
+                <tr>
+                    <td><a href="http://m.46644.com/oil/"><img src="image/oil.png"class="img-responsive center-block"><p>今日油价</p></a></td>
+                    <td><a href="http://m.46644.com/car/"><img src="image/car.png"class="img-responsive center-block"><p>汽车标志</p></a></td>
+                    <td><a href="http://auto.news18a.com/init.php?m=price&c=index&a=index&from=wangshangshiyongchaxun"><img src="image/qichebaojia.png"class="img-responsive center-block"><p>汽车报价</p></a></td>
+                    <td><a href="http://m.ijingxing.com/"><img src="image/jingxing.png"class="img-responsive center-block"><p>景行</p></a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="economic" id="econom">
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <tr>
+                    <td>金融理财</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><a href="http://m.46644.com/exchange/"><img src="image/exchange.png"class="img-responsive center-block"><p>汇率查询</p></a></td>
+                    <td><a href="http://m.46644.com/gold/"><img src="image/gold.png"class="img-responsive center-block"><p>黄金价格</p></a></td>
+                    <td><a href="http://m.46644.com/silver/"><img src="image/silver.png"class="img-responsive center-block"><p>白银价格</p></a></td>
+                    <td><a href="http://m.46644.com/calculator/"><img src="image/calculator.png"class="img-responsive center-block"><p>计算器</p></a></td>
+                </tr>
+                <tr>
+                    <td><a href="http://m.46644.com/loan/housetax.php"><img src="image/house_tax.png"class="img-responsive center-block"><p>房税计算</p></a></td>
+                    <td><a href="http://m.46644.com/loan/"><img src="image/loan_house.png"class="img-responsive center-block"><p>房贷计算</p></a></td>
+                    <td><a href="http://m.46644.com/loan/car.php"><img src="image/loan_car.png"class="img-responsive center-block"><p>车贷计算</p></a></td>
+                    <td><a href="http://m.46644.com/loan/person.php"><img src="image/loan_person.png"class="img-responsive center-block"><p>个税计算</p></a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="tool">
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <tr>
+                    <td>工具万能</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><a href="http://m.46644.com/idcard/"><img src="image/idcard.png"class="img-responsive center-block"><p>身份证</p></a></td>
+                    <td><a href="http://m.46644.com/tel/"><img src="image/tel.png"class="img-responsive center-block"><p>常用电话</p></a></td>
+                    <td><a href="http://m.46644.com/areacode/"><img src="image/areacode.png"class="img-responsive center-block"><p>区号</p></a></td>
+                    <td><a href="http://m.46644.com/shouji/"><img src="image/shouji.png"class="img-responsive center-block"><p>手机归属</p></a></td>
+                </tr>
+                <tr>
+                    <td><a href="http://m.46644.com/zipcode/"><img src="image/zipcode.png"class="img-responsive center-block"><p>邮编</p></a></td>
+                    <td><a href="http://m.46644.com/whois/"><img src="image/who.png"class="img-responsive center-block"><p>whois查询</p></a></td>
+                    <td><a href="http://m.46644.com/iphone/"><img src="image/iphone.png"class="img-responsive center-block"><p>苹果查询</p></a></td>
+                    <td><a href="http://m.46644.com/fontconvert/"><img src="image/fontconvert.png"class="img-responsive center-block"><p>简繁转换</p></a></td>
+                </tr>
+                <tr>
+                    <td><a href="http://m.46644.com/qiming/"><img src="image/qiming.png"class="img-responsive center-block"><p>在线起名</p></a></td>
+                    <td><a href="http://m.46644.com/qimingcom/"><img src="image/qimingcom.png"class="img-responsive center-block"><p>公司起名</p></a></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="star">
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <tr>
+                    <td>星座算命</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><a href="http://m.46644.com/huangli/"><img src="image/huangli114.png"class="img-responsive center-block"><p>黄历查询</p></a></td>
+                    <td><a href="http://m.46644.com/bazi/"><img src="image/bazi114.png"class="img-responsive center-block"><p>八字算命</p></a></td>
+                    <td><a href="http://m.46644.com/hehun/"><img src="image/hehun114.png"class="img-responsive center-block"><p>八字合婚</p></a></td>
+                    <td><a href="http://m.46644.com/sanshi/"><img src="image/sanshi114.png"class="img-responsive center-block"><p>三世财运</p></a></td>
+                </tr>
+                <tr>
+                    <td><a href="http://m.46644.com/dream/"><img src="image/dream114.png"class="img-responsive center-block"><p>周公解梦</p></a></td>
+                    <td><a href="http://m.46644.com/zhuge/"><img src="image/zhuge114.png"class="img-responsive center-block"><p>诸葛神算</p></a></td>
+                    <td><a href="http://m.46644.com/namescore/"><img src="image/namescore114.png"class="img-responsive center-block"><p>姓名测试</p></a></td>
+                    <td><a href="http://m.46644.com/name.php/"><img src="image/name114.png"class="img-responsive center-block"><p>姓名配对</p></a></td>
+                </tr>
+                <tr>
+                    <td><a href="http://m.46644.com/huangdaxian/"><img src="image/huangdaxian114.png"class="img-responsive center-block"><p>黄大仙</p></a></td>
+                    <td><a href="http://m.46644.com/zhiwen/"><img src="image/zhiwen114.png"class="img-responsive center-block"><p>指纹算命</p></a></td>
+                    <td><a href="http://m.46644.com/shouxiang/"><img src="image/shouxiang114.png"class="img-responsive center-block"><p>手相算命</p></a></td>
+                    <td><a href="http://m.46644.com/chenggu/"><img src="image/chenggu114.png"class="img-responsive center-block"><p>称骨算命</p></a></td>
+                </tr>
+                <tr>
+                    <td><a href="http://m.46644.com/guanyin/"><img src="image/guanyin114.png"class="img-responsive center-block"><p>观音灵签</p></a></td>
+                    <td><a href="http://m.46644.com/lvzu/"><img src="image/lvzu114.png"class="img-responsive center-block"><p>吕祖灵签</p></a></td>
+                    <td><a href="http://m.46644.com/tianhou/"><img src="image/tianhou114.png"class="img-responsive center-block"><p>天后灵签</p></a></td>
+                    <td><a href="http://m.46644.com/guandi/"><img src="image/guandi114.png"class="img-responsive center-block"><p>关帝灵签</p></a></td>
+                </tr>
+                <tr>
+                    <td><a href="http://m.46644.com/pair/"><img src="image/xingzuo114.png"class="img-responsive center-block"><p>星座速配</p></a></td>
+                    <td><a href="http://m.46644.com/pair/xuexing.php"><img src="image/xuexing114.png"class="img-responsive center-block"><p>血型速配</p></a></td>
+                    <td><a href="http://m.46644.com/xuexing/"><img src="image/xuexing114%20(1).png"class="img-responsive center-block"><p>血型性格</p></a></td>
+                    <td><a href="http://m.46644.com/shengxiao/"><img src="image/shengxiao114.png"class="img-responsive center-block"><p>十二生肖</p></a></td>
+                </tr>
+                <tr>
+                    <td><a href="http://m.46644.com/pair/shengxiao.php"><img src="image/shengxiao114%20(1).png"class="img-responsive center-block"><p>生肖速配</p></a></td>
+                    <td><a href="http://m.46644.com/shengxiao2/"><img src="image/qimingcom.png"class="img-responsive center-block"><p>生肖运势</p></a></td>
+                    <td><a href=http://m.46644.com/yanpitiao/"><img src="image/yanpitiao114.png"class="img-responsive center-block"><p>眼皮测运</p></a></td>
+                    <td><a href="http://m.46644.com/dapenti/"><img src="image/dapenti114.png"class="img-responsive center-block"><p>喷嚏测运</p></a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="shop">
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <tr>
+                    <td>娱乐购物</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><a href="http://m.kaixinhui.com/"><img src="image/kaixinhui114.png"class="img-responsive center-block"><p>开心汇</p></a></td>
+                    <td><a href="http://6051.yoyuan.com.cn/?from=6051"><img src="image/youyuan.png"class="img-responsive center-block"><p>在线交友</p></a></td>
+                    <td><a href="http://m.46644.com/jzw/"><img src="image/jzw114.png"class="img-responsive center-block"><p>急转弯</p></a></td>
+                    <td><a href="http://m.46644.com/xhy/"><img src="image/xhy114.png"class="img-responsive center-block"><p>歇后语</p></a></td>
+                </tr>
+                <tr>
+                    <td><a href="http://m.46644.com/miyu/"><img src="image/miyu114.png"class="img-responsive center-block"><p>谜语</p></a></td>
+                    <td><a href="http://m.46644.com/rkl/"><img src="image/rkl114.png"class="img-responsive center-block"><p>绕口令</p></a></td>
+                    <td><a href="http://m.46644.com/duanxin/"><img src="image/duanxin114.png"class="img-responsive center-block"><p>短信大全</p></a></td>
+                    <td><a href="http://m.46644.com/sese/"><img src="image/sese114.png"class="img-responsive center-block"><p>色盲测试</p></a></td>
+                </tr>
+                <tr>
+                    <td><a href="http://ai.m.taobao.com/bu.html?id=1&pid=mm_13331897_3044188_11268553"><img src="image/tejia.png"class="img-responsive center-block"><p>天天特价</p></a></td>
+                    <td><a href="http://gou.46644.com/"><img src="image/gou.jpg"class="img-responsive center-block"><p>购物</p></a></td>
+                    <td><a href="http://ai.m.taobao.com/bu.html?id=2&pid=mm_13331897_3044188_11268553"><img src="image/ju.png" class="img-responsive center-block"><p>聚划算</p></a></td>
+                    <td><a href="http://ai.m.taobao.com/?pid=mm_13331897_3044188_11268553"><img src="image/taobao.png"class="img-responsive center-block"><p>爱淘宝</p></a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="educate">
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <tr>
+                    <td>教育亲子</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><a href="http://m.46644.com/zidian/"><img src="image/zidian114.png"class="img-responsive center-block"><p>新华字典</p></a></td>
+                    <td><a href="http://m.46644.com/cidian/"><img src="image/cidian114.png"class="img-responsive center-block"><p>汉语词典</p></a></td>
+                    <td><a href="http://m.46644.com/shufa/"><img src="image/shufa114.png"class="img-responsive center-block"><p>书法字典</p></a></td>
+                    <td><a href="http://m.46644.com/translate/"><img src="image/translate114.png"class="img-responsive center-block"><p>翻译</p></a></td>
+                </tr>
+                <tr>
+                    <td><a href="http://m.46644.com/jinyifanyi/"><img src="image/jinyifanyi114.png"class="img-responsive center-block"><p>近反义词</p></a></td>
+                    <td><a href="http://m.46644.com/unitconvert/"><img src="image/unitconvert114.png"class="img-responsive center-block"><p>单位换算</p></a></td>
+                    <td><a href="http://m.46644.com/youlai/"><img src="image/youlai114.png"class="img-responsive center-block"><p>由来大全</p></a></td>
+                    <td><a href="http://m.46644.com/chengyu/"><img src="image/chengyu114.png"class="img-responsive center-block"><p>成语大全</p></a></td>
+                </tr>
+                <tr>
+                    <td><a href="http://m.46644.com/jieqi/"><img src="image/jieqi114.png"class="img-responsive center-block"><p>节气</p></a></td>
+                    <td><a href="http://m.46644.com/yuyan/"><img src="image/yuyan114.png"class="img-responsive center-block"><p>寓言</p></a></td>
+                    <td><a href="http://m.46644.com/weijie/"><img src="image/weijie114.png"class="img-responsive center-block"><p>未解之谜</p></a></td>
+                    <td><a href="http://m.46644.com/10why/"><img src="image/10why114.png"class="img-responsive center-block"><p>为什么</p></a></td>
+                </tr>
+                <tr>
+                    <td><a href="http://m.46644.com/todayhistory/"><img src="image/todayhistory114.png"class="img-responsive center-block"><p>历史今日</p></a></td>
+                    <td><a href="http://m.46644.com/tonghua/"><img src="image/tonghua114.png"class="img-responsive center-block"><p>童话故事</p></a></td>
+                    <td><a href="http://m.46644.com/duilian/"><img src="image/duilian114.png"class="img-responsive center-block"><p>对联</p></a></td>
+                    <td><a href="http://m.46644.com/yanyu/"><img src="image/yanyu114.png"class="img-responsive center-block"><p>谚语</p></a></td>
+                </tr>
+                <tr>
+                    <td><a href="http://m.46644.com/guoxue/"><img src="image/guoxue114.png"class="img-responsive center-block"><p>国学经典</p></a></td>
+                    <td><a href="http://m.46644.com/tangshi/"><img src="image/tangshi114.png"class="img-responsive center-block"><p>唐诗</p></a></td>
+                    <td><a href="http://m.46644.com/songci/"><img src="image/songci114.png"class="img-responsive center-block"><p>宋词</p></a></td>
+                    <td><a href="http://m.46644.com/yuanqu/"><img src="image/yuanqu114.png"class="img-responsive center-block"><p>元曲</p></a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="health">
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <tr>
+                    <td>医疗健康</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><a href="http://m.46644.com/zhongyao/"><img src="image/zydq114.png"class="img-responsive center-block"><p>中药大全</p></a></td>
+                    <td><a href="http://m.46644.com/pianfang/"><img src="image/pianfang114.png"class="img-responsive center-block"><p>偏方大全</p></a></td>
+                    <td><a href="http://m.46644.com/foodke/"><img src="image/foodke114.png"class="img-responsive center-block"><p>食物搭配</p></a></td>
+                    <td><a href="http://m.46644.com/food/"><img src="image/callogo114.png"class="img-responsive center-block"><p>食物热量</p></a></td>
+                </tr>
+                <tr>
+                    <td><a href="http://m.46644.com/snsn/"><img src="image/snsn114.png"class="img-responsive center-block"><p>生男生女</p></a></td>
+                    <td><a href="http://m.soujibing.com/?src=46644"><img src="image/soujibing.jpg"class="img-responsive center-block"><p>问医生</p></a></td>
+                    <td><a href="http://m.46644.com/pregnant/calculate.php"><img src="image/calculate114.png"class="img-responsive center-block"><p>测预产期</p></a></td>
+                    <td><a href="http://m.46644.com/pregnant/"><img src="image/safe114.png"class="img-responsive center-block"><p>测安全期</p></a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="foot" style="width: 100%; height: 50px; background-color: dimgrey;color: #ffffff">
+    <p>网址导航</p>
+</div>
+</body>
+</html>

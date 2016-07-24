@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* CSS Document */
+*{ padding:0; margin:0;}
+ul li{ list-style:none;}
+.clear{ clear:both;}
+#header{ background:#fff; width:100%; height:80px;}
+.logo{ padding-top:18px; float:left; margin-left:38px;}
+.nav{ float:left; margin-left:258px; position:absolute; left:480px;}
+.nav ul li{ float:left; width:80px; font:16px "微软雅黑";height:75px; line-height:75px;  text-align:center;}
+.nav ul li a{ text-decoration:none;color:#333333;}
+#banner{ background:#7ebae3;width:100%; height:400px;}
+#ban{ background:#7ebae3; width:1200px ; margin:0 auto; height:400px;}
+.head ,#ban ,#tra ,#ent ,#pol{ width:1200px; margin:0 auto;}
+#trader{ width:100%; height:680px; background:#fff;}
+#tra{ width:1200px; margin:0 auto; height:680px; background:#fff;}
+#tra h3{ text-align:center; color:#333333; font:30px "微软雅黑"; margin:40px 0 20px 0;}
+#tra .tra_img{ margin-left:241px;}
+#tra p{ margin-top:50px; text-align:center; font:20px "微软雅黑";}
+#agent{ background:#aecaf0; height:704PX; width:100%;}
+#ent{ background:#aecaf0; height:704PX; width:1200px; margin:0 auto;}
+#profit{ width:100%; background:#eee; height:500px;}
+#prof{ width:1200px; margin:0 auto; background:#eee; height:500px;}
+#prof .p_word ,#earn .p_word{ width:487px; float:left; margin:158px 0 0 87px;}
+#prof .p_word h4 ,#co .p_word h4 ,#earn .p_word h4{ font:35px "微软雅黑"; color:#333;}
+#prof .p_word p ,#co .p_word p ,#earn .p_word p{ font:15px "微软雅黑"; color:#333; line-height:30px; margin-top:15px;}
+#prof .p_word h3{ color:#e95527;font:30px "微软雅黑"; margin-top:15px;}
+#prof img ,#earn img{ float:left; margin:90px 0 0 10px;}
+#cost{ background:#c5ccda; width:100%; height:500px;}
+#co{ background:#c5ccda; width:1200px; margin:0 auto; height:500px;}
+#co img{float:left; margin:90px 0 0 80px;}
+#co .p_word{ width:487px; float:left; margin:98px 0 0 87px;}
+#co .p_word h3{ color:#005f7d;font:30px "微软雅黑"; margin-top:15px;}
+#earnings{ width:100%; height:500px; background:#e2e7f3;}
+#earn{ width:1200px; margin:0 auto;height:500px; background:#e2e7f3;}
+#earn .p_word{ width:487px; float:left; margin:145px 0 0 87px;}
+#earn .p_word h3{ color:#5cb9ca;font:30px "微软雅黑"; margin-top:15px;}
+#comprehensive{ background:#b7c3dc; width:100%; height:700px;}
+#comp{ background:#b7c3dc; width:1200px; height:700px; margin:0 auto;}
+#comp .tit{ float:left; margin:83px 0 0 30px;}
+#comp .tit li{ margin-top:40px; background:url(../images/cooperation/yun_26.png) no-repeat; width:89px; font:14px "微软雅黑";height:58px; line-height:78px; text-align:center; }
+#comp img{ float:left; margin:37px 0 0 25px;}
+#comp .com{ float:left; width:500px; margin:50px 0 0 15px;}
+#comp .com h2{ font:35px "微软雅黑"; color:#333;}
+#comp .com p{ font:14px "微软雅黑"; line-height:30px; margin-top:30px; color:#333;}
+#policy{ background:#f8dfc0; height:957px; width:100%;}
+#pol{ background:#f8dfc0; height:957px; width:1200px; margin:0 auto;}
+#Headquarters{ background:#e9e9e9; height:898px; width:100%;}
+#quar{ background:#e9e9e9; height:898px; width:1200px; margin:0 auto;}
+#quar h3{ color:#3f3e3e; text-align:center; font:40px "微软雅黑"; padding-top:40px;}
+#quar img{ margin:60px 0 0 246px;}
+#footer{background:#182029;; width:100%; height:184px;}
+#foot{background:#182029;width:1200px; margin:0 auto; height:184px;}
+.f_left{ float:left; margin:40px 0 0 118px;}
+.f_nr ul li{ float:left; margin-right:17px; font:12px "微软雅黑"; color:#fff;}
+.big{ font:20px "微软雅黑"; color:#fff; margin:15px 0 0 80px;}
+.small{ font:12px "微软雅黑"; color:#fff; width:338px; text-align:center; margin:20px 0 0 112px;}
+.f_nr{ float:left;margin:30px 0 0 15px;}
+.f_right{ float:left;margin:35px 0 0 40px;}
+
+
+

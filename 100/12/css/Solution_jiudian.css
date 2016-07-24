@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+*{ padding:0; margin:0;}
+ul li{ list-style:none;}
+.clear{ clear:both;}
+#header{ background:#fff; width:100%; height:80px;}
+.logo{ padding-top:18px; float:left; margin-left:38px;}
+.nav{ float:left; margin-left:258px;}
+.nav ul li{ float:left; width:80px; font:16px "微软雅黑";height:75px; line-height:75px;  text-align:center;}
+.nav ul li a{ text-decoration:none;color:#333333;}
+.head ,#ma ,#foot{ width:1200px; margin:0 auto;}
+#main{ width:100%; height:100%; background:#fff; border-top:2px solid #d0d0d0;}
+.title{ height:127px; text-align:center;}
+.title h3{ padding-top:40px; font:23px "微软雅黑"; color:#444;}
+.title p{ padding-top:20px; font:16px "微软雅黑"; color:#444;}
+.num1 ,.num2{ width:960px; margin-left:120px;}
+.num1 h3 ,.num2 h3{ font:22px "微软雅黑"; color:#444; font-weight:bold;}
+.num1 p ,.num2 p{ font:16px "微软雅黑"; color:#444; margin:10px; text-indent:2em; line-height:24px;}
+.hard{ margin-left:50px; font:16px "微软雅黑"; color:#444;}
+.hard ul li{ line-height:24px;}
+.hard img{ margin:10px 0;}
+.nu1 h4 ,.nu2 h4 ,.nu3 h4 ,.nu4 h4{ font:16px "微软雅黑"; color:#444; font-weight:800;}
+.nu1 ul ,.nu2 ul ,.nu3 ul ,.nu4 ul{ margin-left:30px;}
+.nu1 ul li ,.nu2 ul li ,.nu3 ul li ,.nu4 ul li{font:16px "微软雅黑"; color:#444; width:960px;}
+.nu1 ul li img ,.nu2 ul li img ,.nu3 ul li img ,.nu4 ul li img{ margin:40px 0; text-align:center;}
+#footer{ background:#4ab9a5; width:100%; height:184px;}
+.f_left{ float:left; margin:80px 0 0 118px;}
+.f_nr ul li{ float:left; margin-right:17px; font:12px "微软雅黑"; color:#fff;}
+.big{ font:20px "微软雅黑"; color:#fff; margin:15px 0 0 80px;}
+.small{ font:12px "微软雅黑"; color:#fff; width:338px; text-align:center; margin:20px 0 0 112px;}
+.f_nr{ float:left;margin:30px 0 0 15px;}
+.f_right{ float:left;margin:35px 0 0 40px;}
+
+
+

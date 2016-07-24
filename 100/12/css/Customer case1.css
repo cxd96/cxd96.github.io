@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+*{ padding:0; margin:0;}
+ul li{ list-style:none;}
+.clear{ clear:both;}
+#header{ background:#fff; width:100%; height:80px;}
+.logo{ padding-top:18px; float:left; margin-left:38px;}
+.nav{ float:left; margin-left:258px; position:absolute; left:480px;}
+.nav ul li{ float:left; width:80px; font:16px "微软雅黑";height:75px; line-height:75px;  text-align:center;}
+.nav ul li a{ text-decoration:none;color:#333333;}
+#banner{ background:#1f4ba1;width:100%; height:400px;}
+.head ,#ban ,#ma{ width:1200px; margin:0 auto;}
+#main{ background:#fff; height:100%; width:100%; padding-bottom:50px;}
+#ma h3{ text-align:center; font:25px "微软雅黑"; padding-top:30px; color:#444; margin:0 auto; width:320px;}
+#ma h3 img ,#ma h3 span{ float:left;}
+#ma .time{ text-align:center; font:18px "微软雅黑"; padding:10px 0 30px 0; color:#999;}
+#ma .cont{ width:1100px; margin:0 auto;}
+#ma .cont ul{ margin:40px 0 30px 15px;}
+#ma .cont ul li{ float:left;}
+#ma .cont ul li img{ width:500px; height:300px; margin-left:25px;}
+#ma .cont p{ text-indent:2em; font:16px "微软雅黑"; color:#615f5f; line-height:30px; margin-bottom:15px;}
+#ma .cont p span{ font-weight:800;}
+#footer{ background:#182029; width:100%; height:184px;}
+#foot{background:#182029;width:1200px; margin:0 auto; height:184px;}
+.f_left{ float:left; margin:40px 0 0 118px;}
+.f_nr ul li{ float:left; margin-right:17px; font:12px "微软雅黑"; color:#fff;}
+.big{ font:20px "微软雅黑"; color:#fff; margin:15px 0 0 80px;}
+.small{ font:12px "微软雅黑"; color:#fff; width:338px; text-align:center; margin:20px 0 0 112px;}
+.f_nr{ float:left;margin:30px 0 0 15px;}
+.f_right{ float:left;margin:35px 0 0 40px;}
+
+
+

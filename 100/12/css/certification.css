@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* CSS Document */
+*{ padding:0; margin:0;}
+ul li{ list-style:none;}
+.clear{ clear:both;}
+#header{ background:#fff; width:100%; height:80px;}
+.logo{ padding-top:17px; float:left; margin-left:38px;}
+.nav{ float:left; margin-left:258px; position:absolute; left:450px;}
+.nav ul li{ float:left; width:80px; font:16px "微软雅黑";height:75px; line-height:75px;  text-align:center;}
+.nav ul li a{ text-decoration:none;color:#333333;}
+#banner{ background:url(../images/certification/banner_bg_03.png) repeat-x;width:100%; height:400px;}
+.head ,#ban ,#cert ,#tem{ width:1200px; margin:0 auto;}
+#certif{ width:100%; height:845px; background:#fff;}
+#cert h3 ,#tem h3{ font:22px "微软雅黑"; color:#6b6b6b; text-align:center; padding:45px 0 20px 0;letter-spacing:5PX}
+#cert p{ color:#989898; font:16px "微软雅黑"; text-align:center;letter-spacing:5PX}
+.cert_cont{ background:url(../images/certification/renzheng1_03.png) no-repeat; width:1117px; height:602px; margin:70px 0 0 50px;}
+.cert_cont ul{ float:left;}
+.cert_cont .cont2 li{ width:220px; font:14px "微软雅黑"; color:#989898; line-height:26px;}
+.cert_cont .cont1 li{ width:200px; font:14px "微软雅黑"; color:#989898; line-height:26px;}
+.co1{ margin-top:30px;}
+.co2{ margin:195px 0 0 30px;}
+.co3{ margin:85px 0 0 60px;}
+.co4{ margin:20px 0 0 500px;}
+.co5{ margin:125px 0 0 600px;}
+.co6{ margin:78px 0 0 630px;}
+.co7{ margin:80px 0 0 620px;}
+#template{ background:#f2f2f2; width:100%; height:869px;}
+#tem{ background:#f2f2f2; width:1200px; margin:0 auto; height:869px;}
+#tem p{ color:#989898; font:16px "微软雅黑"; text-align:center; width:754px; margin-left:220px; line-height:30px;letter-spacing:5PX}
+.tem_cont{ margin:15px 0 0 95px;}
+.more{ margin:40px 0 0 85px;}
+#footer{background:#182029; width:100%; height:184px;}
+#foot{background:#182029; width:1200px; margin:0 auto; height:184px;}
+.f_left{ float:left; margin:40px 0 0 118px;}
+.f_nr ul li{ float:left; margin-right:17px; font:12px "微软雅黑"; color:#fff;}
+.big{ font:20px "微软雅黑"; color:#fff; margin:15px 0 0 80px;}
+.small{ font:12px "微软雅黑"; color:#fff; width:338px; text-align:center; margin:20px 0 0 112px;}
+.f_nr{ float:left;margin:30px 0 0 15px;}
+.f_right{ float:left;margin:35px 0 0 40px;}
+
+
+

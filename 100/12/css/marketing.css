@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+*{ padding:0; margin:0;}
+ul li{ list-style:none;}
+.clear{ clear:both;}
+#header{ background:#fff; width:100%; height:80px;}
+.logo{ padding-top:17px; float:left; margin-left:38px;}
+.nav{ float:left; margin-left:258px; position:absolute; left:480px;}
+.nav ul li{ float:left; width:80px; font:16px "微软雅黑";height:75px; line-height:75px;  text-align:center;}
+.nav ul li a{ text-decoration:none;color:#333333;}
+#banner{ background:#6bbfff;width:100%; height:400px;}
+#ban{ height:400px; background:#6bbfff; margin:0 auto; width:1200px;}
+.head ,#ban ,#wap1 ,#crm1 ,#mark1 ,#move1 ,#data1 ,#adv1 ,#more1{ width:1200px; margin:0 auto;}
+#wap{ width:100%; height:323px; background:#fff;}
+.img1{ float:left; padding-top:40px; margin-left:127px;}
+.wap_cont{ float:left; width:675px; margin:65px 0 0 20px;}
+.wap_cont h3{ color:#4e4e4e; font:30px "微软雅黑"; margin-bottom:20px;}
+.wap_cont p{ color:#767676; font:18px "微软雅黑"; line-height:36px; width:630px; letter-spacing:2px; margin-left:40px;}
+#crm{ width:100%; background:#f3f3f3; height:306px;}
+#crm1{ background:url(../images/marketing/crp_04.png) no-repeat; width:1200px; height:306px;}
+.crm_cont p{ width:639px;color:#767676; font:18px "微软雅黑"; line-height:36px; letter-spacing:1px; margin-left:137px;}
+.crm_cont h3{color:#4e4e4e; font:30px "微软雅黑"; margin-bottom:20px; margin-left:464px; padding-top:60px;}
+#mark{width:100%; height:399px; background:#fff;}
+#mark1{ background:url(../images/marketing/yingxiao1_02.png) no-repeat;width:1200px; height:306px;}
+.mark_cont h3{color:#4e4e4e; font:30px "微软雅黑"; margin:0 0 20px 533px; padding-top:108px;}
+.mark_cont p{width:634px;color:#767676; font:18px "微软雅黑"; line-height:36px;letter-spacing:1px; margin-left:419px;}
+#map{ background:#f3f3f3;height:276px; width:100%;}
+#map1{ background:#f3f3f3;height:276px; width:1200px; margin:0 auto;}
+.map_cont{ width:640px; float:left; padding-top:70px; margin-left:147px;}
+.map_cont h3{color:#4e4e4e; font:30px "微软雅黑"; margin:0 0 20px 200px;}
+.map_cont p{width:634px;color:#767676; font:18px "微软雅黑"; line-height:36px;letter-spacing:1px; }
+#map img{float:left; margin:46px 0 0 40px;}
+#move{ width:100%; height:350px; background:#fff;}
+#move1{ background:url(../images/marketing/yidongyingxiao_04.png) no-repeat; width:1200px; height:350px;}
+.move_cont p{ width:640px;color:#767676; font:18px "微软雅黑"; line-height:36px;letter-spacing:2px; margin-left:530px;}
+.move_cont h3{color:#4e4e4e; font:30px "微软雅黑"; margin:0 0 20px 433px; padding-top:95px;}
+#data{ width:100%; height:306px; background:#eee;}
+#data1{ background:url(../images/marketing/dashuju_02.png) no-repeat; width:1200px; height:350px;}
+.data_cont p{ width:640px;color:#767676; font:18px "微软雅黑"; line-height:36px;letter-spacing:2px; margin-left:134px;}
+.data_cont h3{color:#4e4e4e; font:30px "微软雅黑"; margin:0 0 20px 570px; padding-top:35px;}
+#adv{ width:100%; height:312px; background:#fff;}
+#adv1{ background:url(../images/marketing/guanggaotuisong_02.png) no-repeat; width:1200px; height:350px;}
+.adv_cont p{ width:640px;color:#767676; font:18px "微软雅黑"; line-height:36px;letter-spacing:2px; margin-left:490px;}
+.adv_cont p span{ display:block; color:#ff00fd;}
+.adv_cont h3{color:#4e4e4e; font:30px "微软雅黑"; margin:0 0 20px 335px; padding-top:58px;}
+#more{ width:100%; height:309px; background:#eee;}
+#more1{ background:url(../images/marketing/more_02.png)no-repeat; width:1200px; height:350px;}
+.more_cont p{ width:595px;color:#767676; font:18px "微软雅黑"; line-height:36px;letter-spacing:1px; margin-left:137px;}
+.more_cont h3{color:#4e4e4e; font:30px "微软雅黑"; margin:0 0 20px 543px; padding-top:46px;}
+
+#footer{ background:#182029; width:100%; height:184px;}
+#foot{background:#182029;width:1200px; margin:0 auto; height:184px;}
+
+.f_left{ float:left; margin:40px 0 0 118px;}
+.f_nr ul li{ float:left; margin-right:17px; font:12px "微软雅黑"; color:#fff;}
+.big{ font:20px "微软雅黑"; color:#fff; margin:15px 0 0 80px;}
+.small{ font:12px "微软雅黑"; color:#fff; width:338px; text-align:center; margin:20px 0 0 112px;}
+.f_nr{ float:left;margin:30px 0 0 15px;}
+.f_right{ float:left;margin:35px 0 0 40px;}
+
+
+

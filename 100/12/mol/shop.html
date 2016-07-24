@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,,initial-scale=1.0">
+    <title></title>
+    <Link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <script src="bootstrap/js/jquery-2.2.0.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <style>
+        a{
+            text-align: center;
+            line-height: 26px;
+            color: #222222;
+        }
+        tr{
+            height: 56px;
+        }
+        h4{
+            font-family: '微软雅黑', 'Lato', Calibri, Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+<div class="well" style="background-color: #46b8da;height: auto;margin-top: -50px">
+    <div class="container">
+        <img src="images/000.png" style="width: 320px;" class="img-responsive">
+        <center>
+            <form onsubmit="return baiduWithHttps(this)" action="http://www.baidu.com/baidu" target="_blank" class="navbar-form" role="search" style="margin-top: -50px">
+                <input type="text" class="form-control" onfocus="checkHttps" name="word" style="width: 90%">
+                <input type="submit"value="百度搜索" class="btn btn-default" style="margin-top: 3px">
+                <br>
+            </form>
+        </center>
+        <script src="http://s1.bdstatic.com/r/www/cache/global/js/BaiduHttps_20150714_zhanzhang.js"></script>
+        <script>
+            function checkHttps () {
+                BaiduHttps.useHttps();
+            };
+            function baiduWithHttps (formname) {
+                var data = BaiduHttps.useHttps();
+                if (data.s === 0) {
+                    return true;
+                }
+                else {
+                    formname.action = 'https://www.baidu.com/baidu' + '?ssl_s=1&ssl_c' + data.ssl_code;
+                    return true;
+                }
+            };
+        </script>
+        <div class="row" style="height: 30px;margin-top: 5px">
+            <div class="col-xs-3"><center><a href="index.html"><img src="images/www.png" style="width: 24px"><h5>网址</h5></a></center></div>
+            <div class="col-xs-3"><center><a href="https://www.taobao.com/"><img src="images/shop.png"style="width: 24px"><h5>购物</h5></a></center></div>
+            <div class="col-xs-3"><center><a href="tool.html"><img src="images/tool.png"style="width: 24px"><h5>工具</h5></a></center></div>
+            <div class="col-xs-3"><center><a href="http://news.baidu.com/"><img src="images/newss.png"style="width: 24px"><h5>新闻</h5></a></center></div>
+        </div>
+    </div>
+</div>
+<div class="table-responsive" style="margin-top: -20px">
+    <table class="table table-bordered">
+        <tr>
+            <td><a href="http://ai.taobao.com/?pid=mm_26866744_3453767_29438876&unid="><img src="images/1.png" style="width: 110px" class="img-responsive center-block"></a></td>
+            <td><a href="https://ju.taobao.com/?ali_trackid=2:mm_26866744_3453767_28062597:1459561606_251_607073151"><img src="images/2t.png" style="width: 110px"class="img-responsive center-block"></a></td>
+            <td><a href="https://www.jd.com/?cu=true&utm_source=p.egou.com&utm_medium=tuiguang&utm_campaign=t_36378_775336_&utm_term=4ef12912d6574bb29ae6f4781517a884"><img src="images/3.png" style="width: 110px"class="img-responsive center-block"></a></td>
+            <td><a href="http://www.gome.com.cn/?cmpid=cps_7279_9405_447977|00c6fb6e8a7b93dbcab3&sid=7279&wid=9405&feedback=447977|00c6fb6e8a7b93dbcab3"><img src="images/4.png" style="width: 110px"class="img-responsive center-block"></a></td>
+        </tr>
+        <tr>
+            <td><a href="http://www.yhd.com/?tracker_u=6258&tracker_type=1&website_id=447977&uid=006ce222d6b6fc51d8b8"><img src="images/5.png" style="width: 110px"class="img-responsive center-block"></a></td>
+            <td><a href="https://chaoshi.tmall.com/?ali_trackid=2:mm_26866744_3453767_28276870:1459561665_264_65331441"><img src="images/6.png" style="width: 110px"class="img-responsive center-block"></a></td>
+            <td><a href="https://temai.taobao.com/index.htm?pid=mm_26866744_2384196_10070298"><img src="images/7.png" style="width: 110px"class="img-responsive center-block"></a></td>
+            <td><a href="http://jx.tmall.com/?ali_trackid=2:mm_26866744_3453767_31192605:1459561697_253_490282611"><img src="images/8.png" style="width: 110px"class="img-responsive center-block"></a></td>
+        </tr>
+        <tr>
+            <td><a href="http://www.handu.com/"><img src="images/9.png" style="width: 110px"class="img-responsive center-block"></a></td>
+            <td><a href="http://www.camel.com.cn/"><img src="images/10.png" style="width: 110px"class="img-responsive center-block"></a></td>
+            <td><a href="http://ai.taobao.com/search/index.htm?key=茵蔓&pid=mm_32487100_4220016_31794045"><img src="images/11.png" style="width: 110px"class="img-responsive center-block"></a></td>
+            <td><a href="https://qiushuiyiren.tmall.com/shop/view_shop.htm?user_number_id=528296282&ali_trackid=2%3Amm_26866744_3453767_28198799%3A1459561742_255_1400936946"><img src="images/12.png" style="width: 110px"class="img-responsive center-block"></a></td>
+        </tr>
+        <tr>
+            <td><a href="http://ai.taobao.com/search/index.htm?key=安踏&pid=mm_32487100_4220016_31794045"><img src="images/13.png" style="width: 110px"class="img-responsive center-block"></a></td>
+            <td><a href="http://ai.taobao.com/search/index.htm?key=海澜之家&pid=mm_32487100_4220016_31794045"><img src="images/14.png" style="width: 110px"class="img-responsive center-block"></a></td>
+            <td><a href="http://ai.taobao.com/search/index.htm?key=纽巴伦&pid=mm_32487100_4220016_31794045"><img src="images/15.png" style="width: 110px"class="img-responsive center-block"></a></td>
+            <td><a href="http://ai.taobao.com/search/index.htm?key=耐克&pid=mm_32487100_4220016_31794045"><img src="images/16.png" style="width: 110px"class="img-responsive center-block"></a></td>
+        </tr>
+    </table>
+</div>
+<div class="hot">
+    <div class="well well-sm" style="margin-top: -15px"><h4>热门推荐</h4></div>
+    <center>
+        <script>var gmcpsmk = '72011646720-13003-19956-1-161-2-2';</script><script src='http://p.cps.gome.com.cn/scripts/gomecpsad.min.js'></script>
+    </center>
+    <div class="table-responsive">
+        <table class="table table-condensed table-bordered">
+            <tr>
+                <td>
+                    <script>var gmcpsmk = '72011646720-13003-19956-2-10777-100';</script><script src='http://p.cps.gome.com.cn/scripts/gomecpsad.min.js'></script>
+                </td>
+                <td>
+                    <script>var gmcpsmk = '72011646720-13003-19956-2-10726-100';</script><script src='http://p.cps.gome.com.cn/scripts/gomecpsad.min.js'></script>
+                </td>
+                <td>
+                    <script>var gmcpsmk = '72011646720-13003-19956-2-10707-100';</script><script src='http://p.cps.gome.com.cn/scripts/gomecpsad.min.js'></script>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <script>var gmcpsmk = '72011646720-13003-19956-2-10662-100';</script><script src='http://p.cps.gome.com.cn/scripts/gomecpsad.min.js'></script>
+                </td>
+                <td>
+                    <script>var gmcpsmk = '72011646720-13003-19956-2-10659-100';</script><script src='http://p.cps.gome.com.cn/scripts/gomecpsad.min.js'></script>
+                </td>
+                <td>
+                    <script>var gmcpsmk = '72011646720-13003-19956-2-10616-100';</script><script src='http://p.cps.gome.com.cn/scripts/gomecpsad.min.js'></script>
+                </td>
+            </tr>
+        </table>
+    </div>
+<div class="row">
+    <div class="col-xs-3">
+        <center>
+            <a href="http://fashion.gome.com.cn/?intcmp=sy-1000000378-2">服装城</a><br><a href="http://tuan.gome.com.cn/?intcmp=sy-1000000378-1">真划算</a><br>
+            <a href="http://jiadian.gome.com.cn/?intcmp=sy-1000000378-4">电器城</a><br><a href="http://www.gomehigo.hk/?intcmp=sy-1000000378-8">海外购</a>
+        </center>
+    </div>
+    <div class="col-xs-3">
+        <center>
+            <a href="http://market.gome.com.cn/?intcmp=sy-1000000378-3">超市</a><br><a href="http://enterprise.gome.com.cn/?intcmp=sy-1000000378-6">企业</a><br>
+            <a href="http://alcohol.gome.com.cn/?intcmp=sy-1000037148-0">百货</a><br><a href="http://auto.gome.com.cn/?intcmp=sy-1000037256-0">汽车</a>
+        </center>
+    </div>
+    <div class="col-xs-3">
+        <center>
+            <a href="http://list.gome.com.cn/cat10000070.html?intcmp=sy-1000037043-0">手机</a>  <br><a href="http://life.gome.com.cn/?intcmp=sy-1000037013-0">厨卫</a><br>
+            <a href="http://luxury.gome.com.cn/?intcmp=sy-1000037202-1">鞋包</a><br><a href="http://xyj.gome.com.cn/?intcmp=sy-1000036986-1">家电</a>
+        </center>
+
+    </div>
+    <div class="col-xs-3">
+        <center>
+            <a href="http://smart.gome.com.cn/?intcmp=sy-1000000378-5">智能</a><br><a href="http://jr.gome.com.cn/?intcmp=sy-1000000378-9">金融</a><br>
+            <a href="http://www.gomehome.com/?intcmp=sy-1000000378-7">家装</a><br><a href="http://health.gome.com.cn/?intcmp=sy-1000037148-1">医疗</a>
+        </center>
+
+    </div>
+</div>
+</div>
+    <div class="gm">
+        <div class="well well-sm"><h4>热卖</h4></div>
+        <center>
+            <script type="text/javascript">var jd_union_pid="407891059";var jd_union_euid="";</script><script type="text/javascript" src="http://ads.union.jd.com/static/js/union.js"></script>
+        </center>
+        <!--<div class="row" style="border: 2px solid gainsboro;margin-top: -70px">-->
+
+            <!--<div class="col-xs-6">-->
+                <!--<center>-->
+                    <!--<script>var gmcpsmk = '72011646720-13003-19956-3-4-120-240';</script><script src='http://p.cps.gome.com.cn/scripts/gomecpsad.min.js'></script>-->
+                <!--</center>-->
+            <!--</div>-->
+            <!--<div class="col-xs-6">-->
+                <!--<br>-->
+                <!--<a href="http://pinpai.gome.com.cn/SI_15/index.html" style="text-align: justify"> <p>长虹电器</p></a>-->
+                <!--<a href="http://pinpai.gome.com.cn/SI_172/index.html" style="text-align: justify"> <p>TCL 彩电 </p></a>-->
+                <!--<a href="http://pinpai.gome.com.cn/SI_47/index.html" style="text-align: justify"> <p>苏泊尔小家电</p></a>-->
+                <!--<a href="http://pinpai.gome.com.cn/SI_60/index.html" style="text-align: justify"> <p>乐视手机</p></a>-->
+                <!--<a href="http://mall.gome.com.cn/80002915/" style="text-align: justify"> <p>北京格力</p></a>-->
+                <!--<a href="http://pinpai.gome.com.cn/preview/SI_76/PI_259.html" style="text-align: justify"><p>海尔旗舰店</p></a>-->
+
+            <!--</div>-->
+        <!--</div>-->
+    </div>
+    <div class="jd" style="margin-top: -70px">
+        <div class="row" style="border: 2px solid gainsboro">
+            <div class="col-xs-6">
+                <center>
+                    <script type="text/javascript">var jd_union_unid="1000024342",jd_ad_ids="509:6",jd_union_pid="CI7QuKq8KhCW0uzcAxoAIOSupsIBKgA=";var jd_width=120;var jd_height=240;var jd_union_euid="";var p="BxMBVhhdEAoVNwpfBkgyTUMIRmtKRk9aZV8ETVxNNwpfBkgyWU88WFhQAVBlK1sJFUdUQyISIUICVAtZK14UBhoFVhJbFjISBlQaWhYHEAJWK2tKRk9aZVA1FDJNQwhGaxUHFg9XGl4VBxUPURNrFA%3D%3D";</script><script type="text/javascript" charset="utf-8" src="//u.x.jd.com/static/js/auto.js"></script>
+                </center>
+            </div>
+            <div class="col-xs-6">
+                <br>
+                <a href="" > <p>休闲女鞋 女装</p></a>
+                <a href=""> <p>休闲男鞋 男装</p></a>
+                <a href="" > <p>家用电器 家居</p></a>
+                <a href=""> <p>典雅手包 手表</p></a>
+                <a href="" > <p>下装 男士/女士</p></a>
+                <a href="" ><p>洁面/护肤/美妆</p></a>
+            </div>
+        </div>
+    </div>
+    <div class="sale">
+        <div class="well well-sm"><h4>团购 美食</h4></div>
+        <center>
+            <iframe frameborder="0" id="mtcontent" scrolling="no" style="width:320px;height:250px;" src="http://x.union.meituan.com/adx?type=10&source=780c0577547e498a9c051fffe18fe541308&callback=1&width=320&height=250"></iframe>        </center>
+      <div class="table-responsive">
+          <table class="table table-bordered" style="background-color: lightcyan;text-align: center">
+              <tr>
+                  <td><a href="http://sjz.meituan.com/category/meishi">美食</a></td>
+                  <td><a href="http://sjz.meituan.com/category/xiuxianyule?mtt=1.index%2Ffloornew.nc.71.imii0lq9">休闲</a></td>
+                  <td><a href="http://sjz.meituan.com/dianying/?mtt=1.index%2Ffloornew.nc.46.imii09ut">电影</a></td>
+                  <td><a href="http://hotel.meituan.com/shijiazhuang?mtt=1.index%2Ffloornew.nc.33.imihzvtx">酒店</a></td>
+              </tr>
+              <tr>
+                  <td><a href="http://sjz.meituan.com/category/shenghuo?mtt=1.index%2Ffloornew.nc.106.imii16gu">生活</a></td>
+                  <td><a href="http://sjz.meituan.com/category/wanggou?mtt=1.index%2Ffloornew.nc.126.imii2tnn">购物</a></td>
+                  <td><a href="http://sjz.meituan.com/category/jiankangliren?mtt=1.index%2Ffloornew.nc.20.imii33g5">丽人</a></td>
+                  <td><a href="http://trip.meituan.com/dujia/jingdianmenpiao">旅游</a></td>
+              </tr>
+              <tr>
+                  <td><a href="">生活</a></td>
+                  <td><a href="">购物</a></td>
+                  <td><a href="">丽人</a></td>
+                  <td><a href="">旅游</a></td>
+              </tr>
+          </table>
+      </div>
+    </div>
+    <div class="foot" style="width: 100%; height: 50px; background-color: dimgrey;color: #ffffff">
+        <p>网址导航</p>
+    </div>
+    <!--<script type="text/javascript">var jd_union_pid="407476070";var jd_union_euid="";</script><script type="text/javascript" src="http://ads.union.jd.com/static/js/union.js"></script>-->
+    <!--<script>var gmcpsmk = '72011646720-13003-19956-3-4-200-200';</script><script src='http://p.cps.gome.com.cn/scripts/gomecpsad.min.js'></script>-->
+    <!--<script type="text/javascript">var jd_union_unid="1000024342",jd_ad_ids="535:6",jd_union_pid="CM3Nu6q8KhCW0uzcAxoAIIiXpsIBKgA=";var jd_width=200;var jd_height=200;var jd_union_euid="";var p="BxMBVhhdEAoVNwpfBkgyTUMIRmtKRk9aZV8ETVxNNwpfBkgydgUAWSBdVUhkT08ORWJKBD1LWxFYVAtZK14UBhoFVhJbFjISBlQaWhYHEAJWK2tKRk9aZVA1FDJNQwhGaxUHFg9XGl4VChYBXRprFA%3D%3D";</script><script type="text/javascript" charset="utf-8" src="//u.x.jd.com/static/js/auto.js"></script>-->
+    <!--<script>var gmcpsmk = '72011646720-13003-19956-3-4-120-240';</script><script src='http://p.cps.gome.com.cn/scripts/gomecpsad.min.js'></script>-->
+    <!--<iframe frameborder="0" id="mtcontent" scrolling="no" style="width:180px;height:250px;" src="http://x.union.meituan.com/adx?type=10&source=780c0577547e498a9c051fffe18fe541308&callback=1&width=180&height=250"></iframe>-->
+    <!--<a href="http://r.union.meituan.com/url/visit/?a=1&key=780c0577547e498a9c051fffe18fe541308&url=http%3A%2F%2Fwww.meituan.com" target="_blank"><img alt="mt_220*150" src="http://union.meituan.com/static/ad/MT_1343378560.jpg"  border="0" /></a>-->
+    <!--<a href='http://u.ctrip.com/union/CtripRedirect.aspx?TypeID=2&AllianceID=311592&sid=790766&ouid=&app=0102F00&jumpUrl=http://www.ctrip.com' target='_blank' ><img src='http://pages.ctrip.com/amd/2014/1/3/qz/qz360x300.jpg' border='0' /></a>-->
+    <!--<a href='http://u.ctrip.com/union/CtripRedirect.aspx?TypeID=2&AllianceID=311592&sid=790766&ouid=&app=0102F00&jumpUrl=http://www.ctrip.com' target='_blank' ><img src='http://pages.ctrip.com/amd/2014/1/3/qz/qz180x320.jpg' border='0' /></a>-->
+    <!--<iframe id="f" width="100px" height="100px" src= "http://union.yhd.com/link_make/viewPicInfo.do?imgSize=100x100&adPositionId=41659&truckerU=522983109" frameborder="no" border="0" marginwidth="0" marginheight="0" allowtransparency="yes" scrolling="NO" > </iframe>-->
+    <!--<iframe id="f" width="284px" height="304px" src= "http://union.yhd.com/resourceCenter/viewShoppingWindow.do?shoppingWindowVo.trackerU=522983109&shoppingWindowVo.type=1&shoppingWindowVo.width=282&shoppingWindowVo.height=302&shoppingWindowVo.adPositionId=41733&shoppingWindowVo.categoryIdStr=5135" frameborder="no" border="0" marginwidth="0" marginheight="0" allowtransparency="yes" scrolling="NO" > </iframe>-->
+
+
+
+    <!--<a href="http://www.lashou.com?union_pid=351510271&union_sign=62;5821" target="_blank">123</a>-->
+    <!--<a href="http://www.lashou.com?union_pid=351510271&union_sign=62;5821" target="_blank">fdx</a>-->
+    <!--<a href="http://www.lashou.com?union_pid=351510271&union_sign=62;5821" target="_blank">xbc</a>-->
+    <!--国美-->
+    <!--<script>var gmcpsmk = '72011646720-13003-19956-1-209-1';</script><script src='http://p.cps.gome.com.cn/scripts/gomecpsad.min.js'></script>-->
+    <!--<script>var gmcpsmk = '72011646720-13003-19956-1-180-1';</script><script src='http://p.cps.gome.com.cn/scripts/gomecpsad.min.js'></script>-->
+    <!--<script>var gmcpsmk = '72011646720-13003-19956-1-194-1';</script><script src='http://p.cps.gome.com.cn/scripts/gomecpsad.min.js'></script>-->
+    <!--<br>-->
+    <!--国美店铺 100 100-->
+    <!--京东搜索框-->
+
+</body>
+</html>

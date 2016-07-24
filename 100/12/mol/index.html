@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,,initial-scale=1.0">
+    <title></title>
+    <Link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="bootstrap/css/index.css" rel="stylesheet" type="text/css">
+    <script src="bootstrap/js/jquery-2.2.0.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!--搜索-->
+<div class="well" style="background-color: #46b8da;height: auto;margin-top: -50px">
+    <div class="container">
+          <img src="images/000.png" style="width: 320px;" class="img-responsive">
+        <center>
+            <form onsubmit="return baiduWithHttps(this)" action="http://www.baidu.com/baidu" target="_blank" class="navbar-form" role="search" style="margin-top: -50px">
+                <input type="text" class="form-control" onfocus="checkHttps" name="word" style="width: 90%">
+                <input type="submit"value="百度搜索" class="btn btn-default" style="margin-top: 3px">
+                <br>
+            </form>
+        </center>
+        <script src="http://s1.bdstatic.com/r/www/cache/global/js/BaiduHttps_20150714_zhanzhang.js"></script>
+        <script>
+            function checkHttps () {
+                BaiduHttps.useHttps();
+            };
+            function baiduWithHttps (formname) {
+                var data = BaiduHttps.useHttps();
+                if (data.s === 0) {
+                    return true;
+                }
+                else {
+                    formname.action = 'https://www.baidu.com/baidu' + '?ssl_s=1&ssl_c' + data.ssl_code;
+                    return true;
+                }
+            };
+        </script>
+        <div class="row" style="height: 30px;margin-top: 5px">
+            <div class="col-xs-3"><center><a href="index.html"><img src="images/www.png" style="width: 24px"><h5>网址</h5></a></center></div>
+            <div class="col-xs-3"><center><a href="shop.html"><img src="images/shop.png"style="width: 24px"><h5>购物</h5></a></center></div>
+            <div class="col-xs-3"><center><a href="tool.html"><img src="images/tool.png"style="width: 24px"><h5>工具</h5></a></center></div>
+            <div class="col-xs-3"><center><a href="http://news.baidu.com/"><img src="images/newss.png"style="width: 24px"><h5>新闻</h5></a></center></div>
+        </div>
+    </div>
+</div>
+<!--图标链接-->
+<div class="icon_link" style="margin-top: -30px">
+    <div class="container">
+        <br><br><br>
+       <div class="row">
+           <div class="col-xs-3 col-sm-3 ">
+               <img src="images/mt.jpg" class="img-responsive center-block img-rounded" style="width: 60px">
+               <center><p><a href="http://sjz.meituan.com/?utm_campaign=baidu&utm_medium=organic&utm_source=baidu&utm_content=homepage&utm_term=">美团</a></p></center>
+               <img src="images/xc.PNG" class="img-responsive center-block img-rounded" style="width: 60px">
+               <center><p><a href="http://www.ctrip.com/?allianceid=4897&sid=155950&ouid=000401app-&utm_medium=&utm_campaign=&utm_source=&isctrip=">携程</p></h5></center>
+           </div>
+           <div class="col-xs-3 col-sm-3 ">
+               <img src="images/sh.PNG" class="img-responsive center-block img-rounded" style="width: 60px">
+               <center><p><a href="http://tv.sohu.com/">搜狐</a></p></center>
+               <img src="images/jd.PNG" class="img-responsive center-block img-rounded" style="width: 60px">
+               <center><p><a href="https://www.jd.com/?cu=true&utm_source=p.egou.com&utm_medium=tuiguang&utm_campaign=t_36378_775336_&utm_term=6013c7de4fdf4c6399c202e25a48a2ac">京东</a></p></center>
+           </div>
+           <div class="col-xs-3 col-sm-3 ">
+               <img src="images/tb.PNG" class="img-responsive center-block img-rounded" style="width: 60px">
+               <center><p><a href="https://www.taobao.com/">爱淘宝</a></p></center>
+               <img src="images/yd.jpg" class="img-responsive center-block img-rounded" style="width: 60px">
+               <center><p><a href="http://www.youdao.com/">有道</a></p></center>
+           </div>
+           <div class="col-xs-3 col-sm-3 ">
+               <img src="images/gm.JPG" class="img-responsive center-block img-rounded" style="width: 60px">
+               <center><p><a href="http://www.gome.com.cn/?cmpid=sem_baidu_cpc_品牌词系列_国美在线-重点词_国美在线">国美</a></p></center>
+               <img src="images/tm.png" class="img-responsive center-block img-rounded" style="width: 60px">
+               <center><p><a href="https://www.tmall.com/?&spm=a1z15.419.3219.9079&ad_id=1001315559c2c043608f&jlogid=a311110358a5ac">天猫</a></p></center>
+           </div>
+       </div>
+    </div>
+</div>
+<!--出行旅游-->
+<div class="tour" style="height: 300px;margin-top: 20px">
+    <div class="container-fluid">
+        <div class="well well-sm" style="height: 50px;background-color: #005aad;margin-bottom: 10px;">
+            <p style="color: #ffffff;font-size: large;font-family: '微软雅黑', 'Lato', Calibri, Arial, sans-serif">出行旅游</p>
+        </div>
+        <center>
+            <div class="tc">
+                <a href="http://www.ly.com/FlightQuery.aspx?refid=155002770"><img src="http://union.17u.cn/upload/old/jipiao220x90.jpg" border="0"></a>
+            </div>
+        </center>
+            <div class="row">
+            <div class="col-xs-3">
+                <p><a href="http://www.ctrip.com/">携程</a></p>
+                <p><a href="http://www.elong.com/?banid=jinshan">酒店</a></p>
+                <p><a href="http://www.ly.com/dujia/wanle/">跟团</a></p>
+                <p><a href="http://www.ly.com/dujia/freetour/">特卖</a></p>
+            </div>
+            <div class="col-xs-3">
+                <p><a href="http://www.ly.com/?RefId=4140683&qdid=35881|1|4140683|8506d4">同程</a></p>
+                <p><a href="http://tuan.ly.com/">民宿</a></p>
+                <p><a href="http://www.ly.com/dujia/group/">自由</a></p>
+                <p><a href="http://www.ly.com/dujia/">海外</a></p>
+            </div>
+            <div class="col-xs-3">
+                <p><a href="http://www.tuniu.com/?p=3854&cmpid=mkt_03027001&utm_campaign=daohang&utm_source=123.duba.net&utm_medium=textlink">途牛</a></p>
+                <p><a href="http://www.12306.cn/mormhweb/">火车</a></p>
+                <p><a href="http://vacations.ctrip.com/insurance/search/t-2.html#ctm_ref=tti_hp_sni_insurance_txt_10">服务</a></p>
+                <p><a href="http://gny.ly.com/">国内</a></p>
+            </div>
+            <div class="col-xs-3">
+                <p><a href="http://www.qunar.com/?tab=hotel&ex_track=auto_4e0d874a">去哪</a></p>
+                <p><a href="http://www.ly.com/FlightQuery.aspx">飞机</a></p>
+                <p><a href="http://tuan.ctrip.com/life/">美食</a></p>
+                <p><a href="http://www.ly.com/dujia/temai/">港澳</a></p>
+            </div>
+        </div>
+    <!--</div>-->
+        <!--</center>-->
+    </div>
+
+<!--时尚购物-->
+<div class="container-fluid">
+    <div class="shop" style="height: 200px;margin-top: 15px">
+        <div class="well-sm" style="background-color: darkred;width:100%;height: 50px;color: #ffffff;margin-bottom: 10px">
+          <p  style="color: #ffffff;font-size: large;font-family: '微软雅黑', 'Lato', Calibri, Arial, sans-serif">时尚购物</p>
+        </div>
+        <div class="col-xs-6">
+            <script type="text/javascript">var jd_union_unid="1000024342",jd_ad_ids="509:6",jd_union_pid="CJvcyt68KhCW0uzcAxoAINS5psIBKgA=";var jd_width=120;var jd_height=240;var jd_union_euid="";var p="BxMBVhhdEAoVNwpfBkgyTUMIRmtKRk9aZV8ETVxNNwpfBkgyem8GZi5qY1dkDnkdQhgVAwtJUl5kcgtZK14UBhoFVhJbFjISBlQaWhYHEAJWK2tKRk9aZVA1FDJNQwhGaxUHFg9QG1kQChYFVh5rFA%3D%3D";</script><script type="text/javascript" charset="utf-8" src="//u.x.jd.com/static/js/auto.js"></script>
+        </div>
+        <div class="col-xs-3">
+            <br>
+            <p><a href="https://ju.taobao.com/?ali_trackid=2:mm_29815875_2576246_17942348:1459481525_2k1_1133691982" style="color: #269abc;font-weight: bold">热卖</a></p>
+            <p><a href="https://www.jd.com/?cu=true&utm_source=www.duba.com&utm_medium=tuiguang&utm_campaign=t_1000003625_jinshanmz&utm_term=411f07990dba4ef792dde8b78adb0559">京东</a></p>
+            <p><a href="http://1mall.yhd.com/4/?tracker_u=8957251">1号</a></p>
+            <p><a href="http://www.jumei.com/?referer=duba_mz&utm_source=duba&utm_medium=nav&utm_content=mz">聚美</a></p>
+            <p><a href="http://www.vip.com/">唯品</a></p>
+            <p><a href="https://ai.taobao.com/?pid=mm_26866744_3453767_40002860">爱淘</a></p>
+
+        </div>
+        <div class="col-xs-3">
+            <!--<p>-->
+            <!--<div class="well-sm" style="background-color: #ffffff">-->
+            <!--<img src="images/lg.png" style="width: 50px" class="img-responsive img-rounded center-block">-->
+            <!--</div>-->
+            <!--</p>-->
+            <br>
+            <p><a href="http://gouwu.duba.com/ninenine/index.shtml?f=__kztg" style="color: #269abc;font-weight: bold">特惠</a></p>
+            <p><a href="http://www.lashou.com/">拉手</a></p>
+            <p><a href="http://sjz.meituan.com/?utm_campaign=baidu&utm_medium=organic&utm_source=baidu&utm_content=homepage&utm_term=">美团</a></p>
+            <p><a href="http://www.gome.com.cn/?cmpid=dh_jinshan_sc">国美</a></p>
+            <p><a href="http://www.suning.com/?utm_source=union&utm_medium=yiqifaROI&utm_campaign=684630&utm_content=0">苏宁</a></p>
+            <p><a href="http://global.vip.com/">海淘</a></p>
+        </div>
+    </div>
+</div>
+
+<br><br>
+<!--新闻资讯-->
+<div class="well-sm  well" style="width: 100%;margin: 10px auto;color: #428bca;font-size: large;font-family: '微软雅黑', 'Lato', Calibri, Arial, sans-serif">
+    <!--<img src="images/" class="img-circle" style="width: 48px">-->
+ 【新闻资讯】
+</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-3">
+                <p><a href="http://news.duba.com/news.html" style="color: #428bca;font-weight: bold">新闻</a></p>
+                <p><a href="http://www.duba.com/qicheqipei.html" style="color: #428bca;font-weight: bold">汽车</a></p>
+                <p><a href="http://www.duba.com/caijingxinwen.html" style="color: #428bca;font-weight: bold">财经</a></p>
+                <p><a href="http://sports.duba.com/?f=dhkz01" style="color: #428bca;font-weight: bold">体育</a></p>
+                <p><a href="http://www.duba.com/tools_index.html?tab=2" style="color: #428bca;font-weight: bold">便民</a></p>
+                <p><a href="http://www.duba.com/junshiguofang.html" style="color: #428bca;font-weight: bold">军事</a></p>
+
+            </div>
+            <div class="col-xs-3">
+                <p><a href="http://news.sina.com.cn/">新浪</a></p>
+                <p><a href="http://www.xcar.com.cn/?zoneclick=101511">爱卡</a></p>
+                <p><a href="http://finance.sina.com.cn/">新浪</a></p>
+                <p><a href="http://sports.qq.com/">腾讯</a></p>
+                <p><a href="http://gouwu.duba.com/kuaidichaxun.html?f=shouye">快递</a></p>
+                <p><a href="http://www.miercn.com/?dubacai">米尔</a></p>
+
+
+            </div>
+            <div class="col-xs-3">
+                <p><a href="http://news.sohu.com/">搜狐</a></p>
+                <p><a href="http://www.autohome.com.cn/beijing/?pvareaid=100515">之家</a></p>
+                <p><a href="http://www.hexun.com/">和讯</a></p>
+                <p><a href="http://www.hupu.com/">虎扑</a></p>
+                <p><a href="http://www.duba.com/tianqiyubao.html?db">天气</a></p>
+                <p><a href="http://www.tiexue.net/">铁血</a></p>
+
+            </div>
+            <div class="col-xs-3">
+                <p><a href="http://news.163.com/">网易</a></p>
+                <p><a href="http://qinhuangdao.bitauto.com/?WT.mc_id=dubakz&referrer=https://www.duba.com/?f=numswdh&t=--type&ft=gjlock">易车</a></p>
+                <p><a href="http://www.stockstar.com/">证券</a></p>
+                <p><a href="http://china.nba.com/" >NBA</a></p>
+                <p><a href="http://chong.qq.com/">充值</a></p>
+                <p><a href="http://www.xinjunshi.com/">环球</a></p>
+
+            </div>
+        </div>
+
+</div>
+<br>
+<!--影音阅读-->
+    <div class="well well-sm" style="width: 100%;margin: 10px auto;color: orange;font-size: large;font-family: '微软雅黑', 'Lato', Calibri, Arial, sans-serif">
+        <!--<img src="images/" style="width: 48px" class="img-circle">-->
+       【影音阅读】
+    </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <center>
+                        <iframe id="f" width="245px" height="50px" src= "http://info.lm.tv.sohu.com/c/0000000b72e4e6de5bac4e2d3e0c918c1a6bcadfsk5/18764.do" frameborder="no" border="0" marginwidth="0" marginheight="0" allowtransparency="yes" scrolling="NO"> </iframe>
+                    </center>
+                </div>
+                <div class="col-xs-12">
+                    <center>
+                        <iframe id="f1" width="260px" height="250px" src= "http://info.lm.tv.sohu.com/csp/0000000b39f8b820eff69c76a229fd43d752d786cf6/18764.do" frameborder="no" border="0" marginwidth="0" marginheight="0" allowtransparency="yes" scrolling="NO"> </iframe>
+                    </center>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-3">
+                    <p><a href="http://www.duba.com/xiaoshuowz.html" style="color: #428bca;font-weight: bold">小说</a></p>
+                    <p><a href="http://v.duba.com/?f=dhkzbq_sp" style="color: #428bca;font-weight: bold">视频</a></p>
+                    <p><a href="http://www.duba.com/meinvsite.html" style="color: #428bca;font-weight: bold">美图</a></p>
+                    <p><a href="http://www.duba.com/music_index.html" style="color: #428bca;font-weight: bold">音乐</a></p>
+                    <p><a href="http://v.duba.com/dongman/?f=dhks" style="color: #428bca;font-weight: bold">动漫</a></p>
+
+                </div>
+                <div class="col-xs-3">
+                    <p><a href="http://www.qidian.com/Default.aspx">起点</a></p>
+                    <p><a href="http://www.youku.com/">优酷</a></p>
+                    <p><a href="http://huaban.com/">花瓣</a></p>
+                    <p><a href="http://www.kugou.com/">酷狗</a></p>
+                    <p><a href="http://baozou.com/">暴漫</a></p>
+
+                </div>
+                <div class="col-xs-3">
+                    <p><a href="http://www.xxsy.net/">潇湘</a></p>
+                    <p><a href="http://v.qq.com/?ptag=duba.kuzhan">腾讯</a></p>
+                    <p><a href="http://www.fengniao.com/">摄影</a></p>
+                    <p><a href="http://www.kuwo.cn/">酷我</a></p>
+                    <p><a href="http://www.1kkk.com/">漫画</a></p>
+
+                </div>
+                <div class="col-xs-3">
+                    <p><a href="http://www.xxsy.net/search.html?s_type=7">言情</a></p>
+                    <p><a href="http://tv.sohu.com/?txid=c8587326dc3838d27322d16bb5c866d8">搜狐</a></p>
+                    <p><a href="http://v.qq.com/?ptag=duba.kuzhan">美女</a></p>
+                    <p><a href="http://www.1ting.com/" >一听</a></p>
+                    <p><a href="http://live.bilibili.com/">B站</a></p>
+
+                </div>
+            </div>
+
+    </div>
+<br>
+<!--休闲娱乐-->
+    <div class="well well-sm" style="width: 100%;margin:10px auto;color: mediumspringgreen;font-size: large;font-family: '微软雅黑', 'Lato', Calibri, Arial, sans-serif"">
+       <!--<img src="images/" style="width: 48px" class="img-circle">-->
+    【休闲娱乐】
+    </div>
+        <div class="container">
+            <div class="row" style="margin-bottom: 20px">
+                <div class="col-xs-3">
+                    <a href="http://tieba.baidu.com/f?kw=%D0%A6%BB%B0&fr=ala0&tpl=5">
+                        <img src="images/kx.jpg" style="width: 60px" class="img-circle img-responsive center-block">
+                        <p style="color: #101010;text-align: center">笑话</p>
+                    </a>
+                    <a href="http://sy.9724.com/zt/kxxxl/index.html?f=kmgg">
+                     <img src="images/xxl.png" style="width: 60px" class="img-circle img-responsive center-block">
+                     <p style="color: #101010;text-align: center">消消乐</p>
+                     </a>
+                    <br>
+                    <p><a href="http://www.duba.com/youmoxiaohua.html" style="color: #428bca;font-weight: bold">笑话</a></p>
+                    <p><a href="http://game.9724.com/index.html?f=flz1" style="color: #428bca;font-weight: bold">游戏</a></p>
+                    <p><a href="http://www.duba.com/shequ.html" style="color: #428bca;font-weight: bold">论坛</a></p>
+                    <p><a href="http://v.duba.com/dongman/?f=dhks2" style="color: #428bca;font-weight: bold">动漫</a></p>
+                    <p><a href="http://v.duba.com/ent/?f=dhks2" style="color: #428bca;font-weight: bold">娱乐</a></p>
+
+                </div>
+                <div class="col-xs-3">
+                    <a href="http://bbs.tianya.cn/">
+                        <img src="images/ty.png" style="width: 60px" class="img-circle img-responsive center-block">
+                        <p style="color: #101010;text-align: center">天涯</p>
+                    </a>
+                    <a href="http://sy.9724.com/zt/rxcq.html?f=kmgg">
+                        <img src="images/qj.png" style="width: 60px" class="img-circle img-responsive center-block">
+                        <p style="color: #101010;text-align: center">传奇</p>
+                    </a>
+                    <br>
+                    <p><a href="http://www.pengfu.com/">捧腹</a></p>
+                    <p><a href="http://www.4399.com/">4399</a></p>
+                    <p><a href="http://bbs.tianya.cn/">天涯</a></p>
+                    <p><a href="http://dm.10086.cn/" >咪咕</a></p>
+                    <p><a href="http://yule.sohu.com/" >搜狐</a></p>
+
+                </div>
+                <div class="col-xs-3">
+                    <a href="http://www.renren.com/">
+                        <img src="images/renren.jpg" style="width: 60px" class="img-circle img-responsive center-block">
+                        <p style="color: #101010;text-align: center">人人</p>
+                    </a>
+                    <a href="http://xyx.9724.com/zt/baby/?f=ksgg">
+                        <img src="images/bb.png" style="width: 60px" class="img-circle img-responsive center-block">
+                        <p style="color: #101010;text-align: center">宝宝</p>
+                    </a>
+                    <br>
+                    <p><a href="http://www.waduanzi.com/">段子</a></p>
+                    <p><a href="http://www.2144.cn/">2144</a></p>
+                    <p><a href="http://www.mop.com/">猫扑</a></p>
+                    <p><a href="http://www.1kkk.com/manhua-shaonvaiqing/" >爱漫</a></p>
+                    <p><a href="http://ent.163.com/" >网易</a></p>
+
+                </div>
+                <div class="col-xs-3">
+                    <a href="http://dm.10086.cn/">
+                        <img src="images/mg.png" style="width: 60px" class="img-circle img-responsive center-block">
+                        <p style="color: #101010;text-align: center">咪咕</p>
+                    </a>
+                    <a href="http://sy.9724.com/zt/qmqz.html?f=kmgg">
+                        <img src="images/qz.png" style="width: 60px" class="img-circle img-responsive center-block">
+                        <p style="color: #101010;text-align: center">枪战</p>
+                    </a>
+                    <br>
+                    <p><a href="http://www.ihuopo.com/">笑话</a></p>
+                    <p><a href="http://www.duopao.com/">多泡</a></p>
+                    <p><a href="http://www.renren.com/">人人</a></p>
+                    <p><a href="http://baozou.com/" >暴漫</a></p>
+                    <p><a href="http://www.huabian.com/" >花边</a></p>
+
+                </div>
+            </div>
+    </div>
+    <br>
+<!--生活服务-->
+    <div class="well well-sm" style="width: 100%;margin: 10px auto;color: palevioletred;font-size: large;font-family: '微软雅黑', 'Lato', Calibri, Arial, sans-serif"">
+        <!--<img src="images/" width="48px" class="img-circle"> -->
+【生活服务】
+    </div>
+        <div class="container">
+            <div class="row" style="margin-bottom: 20px">
+                <div class="col-xs-3">
+                    <div class="border">
+                        <img src="images/fast-meal.png" style="width: 60px" class="img-responsive center-block">
+                        <p style="text-align: center">饮食</p>
+                    </div>
+                    <div class="border">
+                        <img src="images/ATM.png" style="width: 60px" class="img-responsive center-block">
+                        <p style="text-align: center">ATM</p>
+                    </div>
+                    <br>
+                    <p><a href="http://v.duba.com/dianying/?f=dhks2" style="color: #428bca;font-weight: bold">电影</a></p>
+                    <p><a href="http://www.duba.com/tianqiyubao.html" style="color: #428bca;font-weight: bold">天气</a></p>
+                    <p><a href="http://www.duba.com/xingzuo.html" style="color: #428bca;font-weight: bold">星座</a></p>
+                    <p><a href="http://www.duba.com/aiqingjiaoyou.html" style="color: #428bca;font-weight: bold">交友</a></p>
+                    <p><a href="http://chong.qq.com/" style="color: #428bca;font-weight: bold">充值</a></p>
+                </div>
+                <div class="col-xs-3">
+                    <div class="border">
+                        <img src="images/p.png" style="width: 60px" class="img-responsive center-block">
+                        <p style="text-align: center">停车</p>
+                    </div>
+                    <div class="border">
+                        <img src="images/sweet.png" style="width: 60px" class="img-responsive center-block">
+                        <p style="text-align: center">甜点</p>
+                    </div>
+                    <br>
+                    <p><a href="http://v.duba.com/zongyi/?f=dhks2">综艺</a></p>
+                    <p><a href="http://gouwu.duba.com/kuaidichaxun.html?f=shouye">快递</a></p>
+                    <p><a href="http://www.duba.com/jiemeng2.html">解梦</a></p>
+                    <p><a href="http://www.duba.com/mr.html" >美容</a></p>
+                    <p><a href="http://www.duba.com/yinshiyingyang.html">外卖</a></p>
+                </div>
+                <div class="col-xs-3">
+                    <div class="border">
+                        <img src="images/scign.png" style="width: 60px" class="img-responsive center-block">
+                        <p style="text-align: center">风景</p>
+                    </div>
+                    <div class="border">
+                        <img src="images/swim.png" style="width: 60px" class="img-responsive center-block">
+                        <p style="text-align: center">健身</p>
+                    </div>
+                    <br>
+                    <p><a href="http://v.duba.com/ent/?f=dhks2">娱乐</a></p>
+                    <p><a href="http://www.jdd.com/KaiJiang/index.html?f=dh_sycx01">彩票</a></p>
+                    <p><a href="http://www.duba.com/wannianli.html">日历</a></p>
+                    <p><a href="http://www.duba.com/jianfei.html" >减肥</a></p>
+                    <p><a href="http://gouwu.duba.com/ninenine/index.shtml?f=dbdb">包邮</a></p>
+                </div>
+                <div class="col-xs-3">
+                    <div class="border">
+                        <img src="images/supermarket.png" style="width: 60px"class="img-responsive center-block">
+                        <p style="text-align: center">购物</p>
+                    </div>
+                    <div class="border">
+                        <img src="images/bus.png" style="width: 60px" class="img-responsive center-block">
+                        <p style="text-align: center">公交</p>
+                    </div>
+                    <br>
+                    <p><a href="http://v.duba.com/dianshiju/?f=dhks2">电视</a></p>
+                    <p><a href="http://www.duba.com/map.html">地图</a></p>
+                    <p><a href="http://www.duba.com/suanming.html">算命</a></p>
+                    <p><a href="http://www.duba.com/meishi.html" >美食</a></p>
+                    <p><a href="http://sy.9724.com/zq.html?f=sygg2">手游</a></p>
+                </div>
+            </div>
+        </div>
+<!--底部-->
+<div class="footer" style="height: 50px;width: 100%; margin: 20px auto; background-color:gray">
+    <p style="text-align: center; color: #ffffff; font-weight: bold">网址导航</p>
+</div>
+</body>
+</html>
